@@ -117,7 +117,7 @@ public class Model {
 	//asks user to input grid size and uses the results to create the game of life world
 	public static int [] gridSize() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Please enter the grid Size:");
+		System.out.print("Please enter the grid size using two numbers with a space in between e.g. 100 100:");
 		int row = sc.nextInt();
 		int column = sc.nextInt();
 		int [] gridSize = {row, column};
