@@ -132,11 +132,11 @@ public class Model {
 		int c = gridSize [1];
 		Model x = new Model(r,c);
 		int noOfChange = 1; //initial value set to 1 so that the game can begin.
-		x.random(0.6); //determines how many values are changed to living in the initial state of the world. the closer the value is to 1, the greater
-		//the occurrence of living cells.
-	while(noOfChange > 0) { //loops while changes happen within the world so that each iteration is printed to the console
-		x.writeToConsole();
-		noOfChange = x.printLife();
-	}
+		x.random(0.6); /*determines how many values are changed to living in the initial state of the world. the closer the value is to 1, the greater
+						*the occurrence of living cells.*/
+		while(noOfChange > 0) { //loops while changes happen within the world so that each iteration is printed to the console
+			x.writeToConsole();
+			noOfChange = x.printLife();
+		}
 	}
 }
